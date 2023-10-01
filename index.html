@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+	<script>
+	var r_text = new Array();
+r_text[0] = "Vejfinding";
+r_text[1] = "Færdselsregler";
+r_text[2] = "Julesangvælger";
+r_text[3] = "Festideer";
+r_text[4] = "Passwordskole";
+r_text[5] = "Musik";
+r_text[7] = "Kunstguide";
+r_text[8] = "TV-program";
+r_text[9] = "Billedeling";
+r_text[10] = "indkøbsseddel";
+r_text[11] = "Kommunikation";
+r_text[11] = "Kultur";
+r_text[12] = "Huskesseddel";
+
+var u_text = new Array();
+u_text[0] = "Fodgængere";
+u_text[1] = "Cyklister";
+u_text[2] = "Studerende";
+u_text[3] = "Fraskilte";
+u_text[4] = "Brigdespillere";
+u_text[5] = "Børnehavebørn";
+u_text[6] = "Erhvervsaktive";
+u_text[7] = "Pensionister";
+u_text[8] = "Selvstændige";
+u_text[9] = "Motionister";
+u_text[10] = "Teenagere";
+u_text[11] = "LEGO-fans";
+u_text[12] = "Trekkies";
+u_text[13] = "Bankfuldmægtige";
+u_text[14] = "Influencere";
+u_text[15] = "Pensionister";
+
+var i = Math.floor(r_text.length * Math.random());
+var m = Math.floor(u_text.length * Math.random());
+
+document.write(
+  "<p class='emne'>" +
+    r_text[i] +
+    "</p>" +
+    "<p> for </p>" +
+    "<p class='emne'>" +
+    u_text[m] +
+    "</p>" +
+    "<hr />" +
+    "<a href='/'>Giv mig en anden idé</a>"
+);
+
+var bgcolorlist = new Array(
+  "#228B22",
+  "#FFD700",
+  "#ADFF2F",
+  "#FF69B4",
+  "#CD5C5C",
+  "#4B0082",
+  "#7CFC00",
+  "#ADD8E6",
+  "#E84643",
+  "#ED0A07",
+  "#EA2907",
+  "#E5294B",
+  "#E00D26",
+  "#FF3030",
+  "#FC7500",
+  "#F95700",
+  "#F43900",
+  "#F95620"
+);
+
+document.body.style.background =
+  bgcolorlist[Math.floor(Math.random() * bgcolorlist.length)];
+	</script>
+	<style>
+body {
+  display: box;
+  width: 30em;
+  height: 30em;
+  margin: 10em 37%;
+  font-size: 18px;
+}
+h1 {
+  display: box;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 0.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, Sans-serif;
+}
+p {
+  font-size: 7em;
+  line-height: 0px;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  font-family: times, serif;
+}
+.emne {
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+  font-style: normal;
+  line-height: 0px;
+  font-family: Helvetica, Arial, Sans-serif;
+}		
+hr {
+  visibility: hidden;
+  margin: 6em;
+}
+a {
+  display: box;
+  width: 100%;
+  margin: 1em 28%;
+  padding: 1em;
+  color: #000;
+  font-weight: bold;
+  font-family: Helvetica, Arial, Sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border: 1px;
+  border-color: #000;
+  border-radius: 1em;
+  background-color: #eee;
+}
+	</style>
+<meta charset="UTF-8">
+<title>Inspiration</title>
+</head>
+
+<body>
+	<h1>Inspiration</h1>
+</body>
+</html>
